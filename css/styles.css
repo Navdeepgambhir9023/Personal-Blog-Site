@@ -1,0 +1,119 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgba(255, 206, 134, 1) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, #95e1d3, #a4e7d1, #b3edcf, #c3f3ce, #d4f8ce, #dbf9c9, #e2f9c3, #ebf9be, #edf4b1, #f1efa3, #f6e996, #fce38a);
+}
+
+.navbar {
+  position: fixed !important;
+  width: 80%;
+  padding: 10px !important;
+  transition: all 0.3s ease;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, 0);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  background-image: radial-gradient(ellipse at 5px 203px, rgba(166, 239, 255, 0.5), rgba(165, 221, 255, 0.6), rgba(236, 255, 161, 0.7)), url(../assets/images/grains.png);
+}
+
+.navbar.sticky {
+  background-image: radial-gradient(ellipse at 5px 203px, rgba(166, 239, 255, 0.6), rgba(165, 221, 255, 0.5), rgba(236, 255, 161, 0.7)), url(../assets/images/grains.png);
+  padding: 3px !important;
+  width: 100%;
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border-radius: 10px;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.1);
+}
+
+.navbar-brand {
+  width: 4.5rem;
+  margin: 0px 10px;
+}
+
+.page-wrapper {
+  z-index: -1;
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: auto;
+}
+
+.home-section {
+  /* background-image: linear-gradient(to left top, #bcbcbc, #adadaf, #9f9da1, #928e93, #867f85, #7b727a, #6f656f, #645864, #554b5b, #443e53, #31334b, #1a2842); */
+  background-color: #383838;
+  background-size: cover;
+  display: flex;
+  height: 90vh;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px 10px 50px;
+  color: white;
+}
+
+.right {
+  float: right;
+}
+
+.home-right-svg {
+  position: absolute;
+  width: 400px;
+  left: 10px;
+  top: 90px;
+}
+
+.middle {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.middle p {
+  font-size: 40px;
+}
+
+.home-middle-svg {
+  position: absolute;
+  width: 600px;
+  left: 55%;
+  top: 33%;
+  transform: translate(-50%, -50%);
+}
+
+.home-left-up-svg {
+  position: absolute;
+  right: 40px;
+  top: 70px;
+  width: 200px;
+}
+
+.home-left-down-svg {
+  position: absolute;
+  right: 40px;
+  top: 320px;
+  width: 200px;
+}
